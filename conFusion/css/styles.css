@@ -41,3 +41,14 @@ body {
 .breadcrumb {
   background: none;
 }
+
+.reserve-link {
+  color: black;
+  text-decoration: none;
+}
+
+.reserve-link:hover,
+.reserve-link:focus {
+  color: black;
+  text-decoration: none;
+}

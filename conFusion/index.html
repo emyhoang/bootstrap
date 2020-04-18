@@ -39,7 +39,7 @@
             </li>
           </ul>
           <span class='navbar-text'>
-              <a data-toggle='modal' data-target='#loginModal'>
+              <a id='loginLink'>
                   <span class='fa fa-sign-in'> Login</span>
               </a>
           </span>
@@ -103,7 +103,7 @@
 
           <div class='col-12 col-sm-3 align-self-center'>
             <button class='btn btn-sm btn-warning btn-block'>
-                <a data-toggle='modal' data-target='#reserveModal'>Reserve A Table</a>
+                <a id='reserveLink'>Reserve A Table</a>
             </button>
           </div>
 
@@ -372,6 +372,14 @@
               $("#carouselButton").children("span").addClass('fa-pause');                    
           }
         });
+        $("a[id='loginLink']").on('click',function() {
+            $('#loginModal').modal('show');
+        });
+
+        $("a[id='reserveLink']").on('click',function() {
+            $('#reserveModal').modal('show');
+        });
+
       });
     </script>
 
